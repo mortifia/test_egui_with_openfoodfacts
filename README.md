@@ -1,4 +1,6 @@
 # OpenFoodFacts Viewer
+![Rust Version](https://img.shields.io/badge/rust-1.70%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 A lightweight desktop application built with Rust and the egui library to explore food product data from the OpenFoodFacts API. Users can search for products by name and view details such as ingredients in a simple, intuitive GUI.
 
@@ -180,8 +182,3 @@ Copyright (c) 2025 Guillaume Casal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 ```
-
-## Badges
-
-![Rust Version](https://img.shields.io/badge/rust-1.70%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
