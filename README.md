@@ -168,11 +168,6 @@ OpenFoodFacts for the open food database.
 egui for the GUI framework.
 The Rust community for excellent tools and support.
 
-## Customization Notes
-
-Repository URL: Replace <https://github.com/mortifia/test_egui_with_openfoodfacts>  
-Screenshots: Create a screenshots/ directory and add images (e.g., search.png, details.png) to visually showcase the app. Update the paths in the README accordingly.
-
 ## License
 
 ```txt
