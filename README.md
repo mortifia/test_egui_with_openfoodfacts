@@ -27,7 +27,7 @@ Clone the Repository:
 
 ```bash
 git clone https://github.com/mortifia/test_egui_with_openfoodfacts
-cd openfoodfacts-viewer
+cd test_egui_with_openfoodfacts
 ```
 
 ### Install Dependencies
@@ -78,6 +78,7 @@ Click a product name to see its details.
 Use the "Back" button to return to the search results.
 
 ## Debugging
+
 Check the console for logs when running with RUST_LOG=debug. Example output:
 
 ```log
@@ -180,4 +181,7 @@ Copyright (c) 2025 Guillaume Casal
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 ```
 
-Badges: The shields (Rust version, license) enhance GitHub readability.
+## Badges
+
+![Rust Version](https://img.shields.io/badge/rust-1.70%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
