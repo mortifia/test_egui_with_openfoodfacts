@@ -12,9 +12,9 @@ Cross-Platform: Runs on Windows, macOS, and Linux via eframe.
 ## Screenshots
 
 Search Results
-    Search Screenshot (Add a screenshot here)  
+    ![Search Screenshot](/ext/media/Search.png)
 Product Details
-    Details Screenshot (Add a screenshot here)  
+    ![Details Screenshot](/ext/media/Product%20Details.png)
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Product Details
 Clone the Repository:
 
 ```bash
-git clone https://github.com/yourusername/openfoodfacts-viewer.git
+git clone https://github.com/mortifia/test_egui_with_openfoodfacts
 cd openfoodfacts-viewer
 ```
 
@@ -120,7 +120,7 @@ Fork the Repository: Click "Fork" on GitHub.
 Clone Your Fork:  
 
 ```bash
-git clone https://github.com/yourusername/openfoodfacts-viewer.git  
+git clone https://github.com/mortifia/test_egui_with_openfoodfacts
 ```  
 
 Create a Branch:  
