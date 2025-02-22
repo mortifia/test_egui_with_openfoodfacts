@@ -74,8 +74,8 @@ impl eframe::App for OpenFoodFactsViewer {
         egui::TopBottomPanel::top("top_panel").show(ctx, |ui| {
             ui.horizontal(|ui| {
                 ui.label("Search:");
-                ui.text_edit_singleline(&mut self.search_term);
-                if ui.button("Search").clicked() {
+                let response = ui.text_edit_singleline(&mut self.search_term);
+                if ui.button("Search").clicked() || (response.lost_focus() && ui.input(|i: &egui::InputState| i.key_pressed(egui::Key::Enter))) {
                     self.is_loading = true;
                     self.error_message = None;
                     let sender = self.message_sender.clone();
@@ -90,9 +90,9 @@ impl eframe::App for OpenFoodFactsViewer {
                             Ok(response) => {
                                 debug!("Received response with status: {}", response.status());
                                 let response_text = response.text().unwrap();
-                                println!("Raw JSON: {}", response_text);
-                                let product: Product = serde_json::from_str(&response_text).unwrap();
-                                println!("Product: {:?}", product);
+                                // println!("Raw JSON: {}", response_text);
+                                let search_response: SearchResponse = serde_json::from_str(&response_text).unwrap();
+                                println!("Products: {:?}", search_response.products);
                                 // Cloner le texte de la réponse avant de déplacer `response`
                                 let response_json = serde_json::from_str::<serde_json::Value>(&response_text).unwrap();
                                 match serde_json::from_value::<SearchResponse>(response_json) {
