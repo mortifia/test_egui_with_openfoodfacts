@@ -208,6 +208,6 @@ fn main() {
     eframe::run_native(
         "OpenFoodFacts Viewer",
         options,
-        Box::new(|cc| Box::new(OpenFoodFactsViewer::new(cc))),
+        Box::new(|cc| Ok(Box::new(OpenFoodFactsViewer::new(cc)))),
     );
 }
